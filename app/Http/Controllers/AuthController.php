@@ -54,7 +54,7 @@ class AuthController extends Controller
         }
         $data['user_type'] = 'user';
 
-        User::create($data);
+        // User::create($data);
         $user = User::create($data);
         Mail::to(
             $user->email
